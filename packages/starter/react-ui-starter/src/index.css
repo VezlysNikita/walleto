@@ -1,13 +1,50 @@
 @import './reset.css';
 
 html, body {
-    background-color: #303030;
+    background-color: #68b6a5;
     color: #FFFFFF;
 }
 
 #app {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    position:absolute;
+    top:-40%;
+    left:60%;
+}
+
+#signbtn {
+    display: flex;
+    background-color: #8444ce;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 70px;
+    width: 150px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-left:15px;
+}
+
+#signbtn:not([disabled]):focus-visible {
+    outline-color: white;
+}
+
+#signbtn:not([disabled]):hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0 0);
+}
+
+#signbtn[disabled] {
+    background: #404144;
+    color: #999;
+    cursor: not-allowed;
 }
